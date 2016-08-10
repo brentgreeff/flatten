@@ -15,5 +15,5 @@ https://github.com/jeremyevans/roda-sequel-stack
 
 ### Flatten an array of nested arrays.
 
-Using the simplest code that occoured to me for now, - will improve if needed.
+Using pretty simple code to solve the problem, - will improve if needed.
 Error handling can be added if needed.

@@ -6,7 +6,7 @@ describe Flattener do
   describe "When passed a nested array of integers" do
 
     it "flattens and casts" do
-      _( flatten('[ 1, [ 2, [ 3 ] ], 4 ]') ).must_equal [ 1, 2, 3 , 4 ]
+      _( flatten('[ 1, [ 2, [ 3 ] ], 4 ]') ).must_equal [ 1, 2, 3, 4 ]
     end
   end
 

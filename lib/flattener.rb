@@ -7,11 +7,11 @@ class Flattener
   def perform
     @elements = []
 
-    @input.delete('[] ').split(',') do |elem|
+    @input.delete('[]').split(',') do |elem|
       @elements << begin
         Integer(elem, 10)
       rescue ArgumentError, TypeError
-        elem
+        elem.strip
       end
     end
     @elements

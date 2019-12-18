@@ -17,6 +17,13 @@ describe Flattener do
     end
   end
 
+  describe "When passed elements with spaces in them" do
+
+    it 'flattens correctly' do
+      _( flatten('[ [1], 5 trees, [2] ]') ).must_equal [1, '5 trees', 2]
+    end
+  end
+
   def flatten(input)
     Flattener.new(input).perform
   end

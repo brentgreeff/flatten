@@ -1,4 +1,5 @@
 require "roda"
+require_relative './lib/flattener'
 
 class Flatten < Roda
   plugin :render
@@ -13,7 +14,7 @@ class Flatten < Roda
 
     r.get 'flatten' do
       @entered_array = r['entered_array']
-      @flat_array = @entered_array.delete('[]').split(",")
+      @flat_array = Flattener.new(@entered_array).to_s
       :home
     end
   end

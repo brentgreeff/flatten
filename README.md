@@ -20,3 +20,9 @@ rvm install 2.6.3
 gem install bundler
 bundle
 ```
+
+## Server
+
+`rackup`
+
+open http://localhost:9292/

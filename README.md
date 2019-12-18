@@ -1,7 +1,7 @@
 # flatten
 flattens arrays (the hard way)
 
-trying out the Roda framework, while solving a programming problem.
+- with Roda
 
 [Heroku DEMO](https://flatten.herokuapp.com/) - https://flatten.herokuapp.com
 
@@ -13,7 +13,10 @@ http://mrcook.uk/static-websites-with-roda-framework
 
 https://github.com/jeremyevans/roda-sequel-stack
 
-### Flatten an array of nested arrays.
+## Install
 
-Using pretty simple code to solve the problem, - will improve if needed.
-Error handling can be added if needed.
+```
+rvm install 2.6.3
+gem install bundler
+bundle
+```

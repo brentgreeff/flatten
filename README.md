@@ -8,7 +8,7 @@ flattens arrays (the hard way)
 ## Install
 
 ```
-rvm install 2.6.3
+rvm install 2.7.0-rc1
 gem install bundler
 bundle
 ```
